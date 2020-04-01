@@ -5,7 +5,7 @@
 # If you have anything that's using the Debug Trap or PROMPT_COMMAND 
 # change it to use preexec or precmd
 # See also https://github.com/rcaloras/bash-preexec
-
+# thing
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -86,7 +86,12 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-export PYTHONPATH=$PYTHONPATH:`~/Documents/models/research`:`~/Documents/models/research`/slim
+alias open='xdg-open'
+alias p='python3'
+alias csharp='dotnet run'
+# make left ctrl escape but keep combinations
+xmodmap -e "keysym Control_L control = Escape Control_L" 
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -169,3 +174,4 @@ xterm*|rxvt*)
 *)
     ;;
 esac
+source /home/ouijan/perl5/perlbrew/etc/bashrc
