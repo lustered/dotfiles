@@ -174,4 +174,4 @@ xterm*|rxvt*)
 *)
     ;;
 esac
-source /home/ouijan/perl5/perlbrew/etc/bashrc
+# source /home/ouijan/perl5/perlbrew/etc/bashrc
