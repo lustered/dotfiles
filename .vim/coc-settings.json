@@ -1,0 +1,52 @@
+{
+  // suggestions
+  // "suggest.echodocSupport": true,
+  // TODO add more labels and give them cool glyphs
+  "suggest.completionItemKindLabels": {
+    "text": "t",
+    "method": "m",
+    "function": ""
+  },
+
+  // diagnostics
+  "diagnostic.errorSign": " ",
+  "diagnostic.warningSign": " ",
+  "diagnostic.infoSign": "",
+  "diagnostic.hintSign": " ",
+  "diagnostic.virtualText": true, // this won't work with codelens when error on same line
+
+  // list
+  "list.indicator": ">",
+  "list.selectedSignText": " ",
+
+  // autoformat
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "javascript",
+    "graphql",
+    "html",
+    "yaml",
+    "json",
+    "python",
+    "java"
+  ],
+  "coc.preferences.hoverTarget": "float",
+
+  // python config
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+
+  //java config
+  "java.home": "/usr/lib/jvm/jdk-14.0.2",
+
+  // snippets
+  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/snips"],
+
+  // emmet
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "javascript": "javascriptreact"
+  },
+  "clangd.path": "/home/lust/.config/coc/extensions/coc-clangd-data/install/10.0.0/clangd_10.0.0/bin/clangd"
+}
