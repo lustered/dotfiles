@@ -14,12 +14,11 @@ set nobackup                    " Do not keep backup files, it's 70's style clut
 set clipboard=unnamedplus
 set noswapfile                  " Do not write annoying intermediate swap files
 " set title
-" set visualbell                " I will go blind
 set noerrorbells                " No beep beep
 
 " set foldcolumn=0
-set signcolumn=yes
-set updatetime=200                      " Faster completion
+" set signcolumn=yes
+set updatetime=100                      " Faster completion
 " set termguicolors
 " highlight Comment ctermfg=darkgrey
 " au BufEnter,BufRead *.py setlocal smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
@@ -36,6 +35,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'itchyny/lightline.vim'
 Plug 'mhinz/vim-startify'
 Plug 'mattn/emmet-vim'
+Plug 'tpope/vim-surround'
 call plug#end()
 " ********************************************************************************
 
@@ -49,5 +49,11 @@ let g:lightline = {
       \}
 
 " SYNTAX SETUP
+let g:polyglot_disabled = ['python']
+let g:polyglot_disabled = ['python-compiler']
+let g:polyglot_disabled = ['python-indent']
 let g:python_highlight_all = 1
 let g:python_highlight_space_errors = 0
+" fix backspace in insert
+set backspace=indent,eol,start
+" inoremap <expr><C-h> neocomplete#smart_close_popup()
